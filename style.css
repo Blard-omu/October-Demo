@@ -1,0 +1,128 @@
+
+/* Selector */
+/* universal selector- css rule for all the elements on the page */
+*{
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* tagname(generic)- body, p, h1, h3, div, main, img */
+body{
+    background-color: rgb(85, 127, 127);
+}
+nav{
+    background-color: aliceblue;
+}
+p{
+    color: bisque;
+}
+
+/* class selector */
+.para{
+    color: yellow;
+    border: 5px solid green;
+    padding: 15px 2rem;
+    margin: 4rem 15px;
+}
+
+/* 1rem === 16px  */
+
+/* id */
+#special{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* combinator selectors */
+nav a{
+    color: red;
+}
+
+/* psuedo selector */
+/* .nav-item:nth-child(odd){
+    background-color: rgb(84, 84, 103);
+}
+li:nth-child(odd){
+    background-color: red;
+} */
+/* .nav-item:hover{
+    color: blanchedalmond;
+    background-color: blue;
+} */
+
+/* Flexbox */
+section{
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.product{
+    width: 30%;
+    height: 200px;
+    border: 2px solid black;
+}
+.product img{
+    width: 100%;
+    height: 200px;
+}
+
+.carousel-item, .carousel{
+    margin: auto;
+    width: 800px;
+    height: 400px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 400px;
+}
+
+/* media query */
+@media  (max-width: 1024px){
+
+    body{
+        background-color: greenyellow !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body{
+        background-color: brown !important;
+    }
+
+    .carousel-item, .carousel{
+        margin: auto;
+        width: 98%;
+        height: 400px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    body{
+        background-color: blueviolet !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
